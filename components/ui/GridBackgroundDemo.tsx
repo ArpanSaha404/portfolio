@@ -14,7 +14,7 @@ export function GridBackgroundDemo() {
           words={"Transforming ideas into Seamless Digital Experiences"}
         />
         <p className="md:text-3xl text-xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 py-4">
-          Hi, I'm Arpan, a Full Stack Developer
+          Hi, I&apos;m Arpan, a Full Stack Developer
         </p>
       </div>
     </div>

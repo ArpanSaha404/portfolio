@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Button } from "./ui/moving-border";
-import { Card, CardContent } from "@/components/ui/card";
 import { techStack } from "@/data/data";
 
 const TechStack = () => {
