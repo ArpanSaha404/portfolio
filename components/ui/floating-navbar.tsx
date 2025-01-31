@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { navItems } from "@/types/types";
 
 export const FloatingNav = ({
   navItems,
@@ -72,7 +73,7 @@ export const FloatingNav = ({
           className
         )}
       >
-        {navItems.map((navItem: any, idx: number) =>
+        {navItems.map((navItem: navItems, idx: number) =>
           navItem.name !== "Projects" ? (
             <Link
               key={`link=${idx}`}
