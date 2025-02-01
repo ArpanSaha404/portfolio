@@ -38,13 +38,11 @@ const Projects = () => {
                     style={{ transform: `translateX(${-3 * idx * 8}px)` }}
                     className="flex items-center justify-start"
                   >
-                    <a href="#">
-                      <img
-                        src={icon}
-                        alt="icon"
-                        className="rounded-full p-2 object-cover h-10 w-10 md:h-14 md:w-14"
-                      />
-                    </a>
+                    <img
+                      src={icon}
+                      alt="icon"
+                      className="rounded-full p-2 object-cover h-10 w-10 md:h-14 md:w-14"
+                    />
                   </div>
                 ))}
               </div>

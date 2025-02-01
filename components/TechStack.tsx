@@ -14,7 +14,7 @@ const TechStack = () => {
           <Button
             key={item.name + idx}
             borderRadius="1.75rem"
-            className="py-2 flex justify-center items-center gap-2 md:gap-3 md:py-4 px-3 text-md md:text:lg bg-white dark:bg-black-100 dark:text-white border-neutral-200 dark:border-black-300 saturate-150 backdrop-blur-lg backdrop-filter"
+            className="py-2 cursor-default flex justify-center items-center gap-2 md:gap-3 md:py-4 px-3 text-md md:text:lg bg-white dark:bg-black-100 dark:text-white border-neutral-200 dark:border-black-300 saturate-150 backdrop-blur-lg backdrop-filter"
             duration={Math.ceil(Math.random() * 10000) + 10000}
           >
             <div className="pl-2">{item.name}</div>

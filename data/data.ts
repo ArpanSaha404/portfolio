@@ -29,7 +29,8 @@ export const projects = [
     id: 1,
     title: "Skillverse",
     desc: "Fully responsive learning management system allowing educators to create video courses and students to purchase and learn.",
-    img: "/pexels-maxfrancis-2246476.jpg",
+    // img: "/pexels-maxfrancis-2246476.jpg",
+    img: "/Screenshot 2025-02-01 Skillverse.png",
     techs: [
       "/skill-icons--react-dark.svg",
       "/skill-icons--javascript.svg",
@@ -39,13 +40,14 @@ export const projects = [
       "/skill-icons--mongodb.svg",
     ],
     gitLink: "https://github.com/ArpanSaha404/SkillVerse",
-    liveLink: "",
+    liveLink: "https://skillverse-z2r9.onrender.com/",
   },
   {
     id: 2,
     title: "Travello",
     desc: "A travel package booking platform where admins post packages, and users can book them individually or in groups.",
-    img: "/pexels-maxfrancis-2246476.jpg",
+    // img: "/pexels-maxfrancis-2246476.jpg",
+    img: "/Screenshot 2025-02-01 Travello.png",
     techs: [
       "/skill-icons--react-dark.svg",
       "/skill-icons--typescript.svg",
@@ -55,7 +57,7 @@ export const projects = [
       "/skill-icons--mongodb.svg",
     ],
     gitLink: "https://github.com/ArpanSaha404/Travello",
-    liveLink: "",
+    liveLink: "https://travello-frontend.onrender.com/",
   },
 ];
 

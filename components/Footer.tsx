@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Navigation } from "lucide-react";
+import { Mail, Navigation, Phone } from "lucide-react";
 import { socials } from "@/data/data";
 
 const Footer = () => {
@@ -27,7 +27,15 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex justify-between items-center w-full pt-10">
-        <div>Copyright &#169; Arpan Saha</div>
+        <div>
+          <div className="flex items-center justify-start mb-2">
+            <Mail size={20} className="mr-2" /> : arpan50saha@gmail.com
+          </div>
+          <div className="flex items-center justify-start mb-4">
+            <Phone size={20} className="mr-2" /> : 9836434097
+          </div>
+          Copyright &#169; Arpan Saha
+        </div>
         <div className="text-left w-auto flex items-center justify-center">
           {socials.map((data) => (
             <div key={data.id} className="">
