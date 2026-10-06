@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { Mail, Navigation, Phone } from "lucide-react";
 import { socials } from "@/data/data";
 
@@ -43,7 +44,7 @@ const Footer = () => {
                 className="flex items-center justify-center p-3 mx-4 cursor-pointer border border-black-300 rounded-xl bg-black-100 saturate-150 backdrop-blur-lg backdrop-filter active:scale-75 transition-scale duration-200"
                 onClick={() => handleCopy(data.link)}
               >
-                <img
+                <Image
                   src={data.img}
                   alt={data.name}
                   height={25}

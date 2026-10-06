@@ -1,5 +1,6 @@
 import { projects } from "@/data/data";
 import React from "react";
+import Image from "next/image";
 import { PinContainer } from "./ui/3d-pin";
 
 const Projects = () => {
@@ -23,11 +24,15 @@ const Projects = () => {
               href={item.gitLink}
               className="h-full w-[26rem] sm:w-[30rem] p-4"
             >
-              <img
-                src={item.img}
-                alt={item.title}
-                className="h-[20rem] w-full"
-              />
+              <div className="relative h-[20rem] w-full">
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  fill
+                  sizes="(min-width: 640px) 30rem, 100vw"
+                  className="object-cover"
+                />
+              </div>
               <h1 className="text-xl md:text-2xl px-4 pt-4 pb-0.5">
                 {item.title}
               </h1>
@@ -41,9 +46,11 @@ const Projects = () => {
                     style={{ transform: `translateX(${-3 * idx * 8}px)` }}
                     className="flex items-center justify-start"
                   >
-                    <img
+                    <Image
                       src={icon}
                       alt="icon"
+                      width={56}
+                      height={56}
                       className="rounded-full p-2 object-cover h-10 w-10 md:h-14 md:w-14"
                     />
                   </div>

@@ -29,6 +29,8 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2),
       }
     );
+    // animate is a stable ref from useAnimate; only re-run when the target scope changes
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scope]);
 
   const renderWords = () => {
