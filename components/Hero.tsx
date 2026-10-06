@@ -1,7 +1,7 @@
 "use client";
 import { GridBackgroundDemo } from "./ui/GridBackgroundDemo";
 import { Spotlight } from "./ui/spotlight";
-import { Navigation } from "lucide-react";
+import { Navigation, Download } from "lucide-react";
 
 const Hero = () => {
   const handleSmoothScroll = (
@@ -18,7 +18,7 @@ const Hero = () => {
       <Spotlight className="top-10 left-40 h-screen" fill="blue" />
       <Spotlight className="top-0 left-full h-screen" fill="white" />
       <GridBackgroundDemo />
-      <div className="flex justify-center items-center">
+      <div className="flex flex-wrap justify-center items-center gap-4">
         <button className="relative inline-flex mt-4 h-12 overflow-hidden rounded-lg p-[1px] focus:outline-none focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 w-fulls">
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
           <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-6 text-lg font-medium text-white backdrop-blur-3xl">
@@ -31,9 +31,20 @@ const Hero = () => {
             </a>
           </span>
         </button>
+        <a
+          href="/resume.pdf"
+          download
+          className="relative inline-flex mt-4 h-12 overflow-hidden rounded-lg p-[1px] focus:outline-none focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+        >
+          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-6 text-lg font-medium text-white backdrop-blur-3xl">
+            <Download className="mr-3" /> Download My CV
+          </span>
+        </a>
       </div>
     </div>
   );
 };
 
 export default Hero;
+

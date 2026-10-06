@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
   { name: "Work Experience", link: "#work" },
+  { name: "Projects", link: "#projects" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -87,6 +87,16 @@ export const projects = [
 export const workExperience = [
   {
     title: "Accenture Soln Pvt Ltd. (2026 - Present) Software Analyst",
+    techs: [
+      "C#",
+      "ASP .NET Core",
+      "AWS ECS",
+      "AWS SQS/SNS",
+      "DynamoDB",
+      "Docker",
+      "OAuth 2.0/JWT",
+      "Git",
+    ],
     points: [
       "Architected and developed cloud-native, event-driven microservices using C# and .NET Core on AWS ECS, along with scalable RESTful APIs for billing, payments, cybersecurity, device health, user management, orders, appointments, and customer dashboards, integrating multiple downstream systems.",
       "Modernized and migrated a legacy API to a newer .NET platform by restructuring and integrating existing business logic into a standardized service template while maintaining existing functionality; implemented clean layered architecture with dependency injection and separation across service, repository, and provider components.",
@@ -99,6 +109,7 @@ export const workExperience = [
   },
   {
     title: "Infosys Ltd. (2022 - 2025) Senior System Engineer",
+    techs: ["ASP .NET MVC", "React", "Node.js", "Express", "MongoDB", "MS Excel"],
     points: [
       "Developed a full-stack reporting application using the MERN stack to load, process, calculate, and organize Excel and database data into consolidated, downloadable Excel reports, reducing manual spreadsheet-based reporting effort.",
       "Automated a time-intensive manual reporting process by consolidating multiple database queries into a single-click workflow with real-time progress monitoring, improving operational efficiency and reducing repetitive manual tasks.",
