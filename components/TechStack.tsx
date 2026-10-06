@@ -9,7 +9,7 @@ const TechStack = () => {
       <div className="heading text-3xl py-8">
         My Current <span className="text-purple-400"> Tech Stack</span>
       </div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-4 md:gap-12">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4 md:gap-12">
         {techStack.map((item, idx) => (
           <Button
             key={item.name + idx}

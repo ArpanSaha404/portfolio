@@ -12,13 +12,16 @@ const Projects = () => {
         A Small Collection of{" "}
         <span className="text-purple-400"> Recent Projects</span>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 w-screen lg:gap-32 pl-80">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-2 w-full max-w-7xl mx-auto px-4">
         {projects.map((item) => (
-          <div key={item.id} className="w-1/2 h-[40rem] my-4 lg:my-1">
+          <div
+            key={item.id}
+            className="w-full h-[40rem] my-4 lg:my-1 flex justify-center"
+          >
             <PinContainer
               title={item.title}
               href={item.gitLink}
-              className="h-full min-w-[40vw] p-4"
+              className="h-full w-[26rem] sm:w-[30rem] p-4"
             >
               <img
                 src={item.img}
